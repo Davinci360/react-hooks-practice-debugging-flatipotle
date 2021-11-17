@@ -5,7 +5,7 @@ import ToppingForm from "./ToppingForm";
 import SideForm from "./SideForm";
 
 const DEFAULT_STATE = {
-  protein: [],
+  proteins: [], //Are our functions defined with the correct parameters?
   fillings: [],
   toppings: [],
   sides: [],
@@ -16,7 +16,7 @@ function Form() {
 
   function handleSubmit() {
     event.preventDefault();
-    props.addOrder(formState);
+    props.addOrder(formState); // change to a =>
 
     setFormState({
       ...DEFAULT_STATE,
